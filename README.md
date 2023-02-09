@@ -118,7 +118,7 @@ G\left(\mathbf{x}_2\right)^{-1}\left(\boldsymbol{\omega}_m-\mathbf{x}_4-\mathbf{
 \end{array}\right]=f(x, u, n)
 $$
 
-Where $\mathbf{g}$ is acceleration due to gravity implemented by the vector $[0,0,-9.81]^{\top}, \mathbf{n}_{b g}$ is the noise due to gyroscope bias and $\mathbf{n}_{b a}$ is noise due to accelerometer bias. The inputs to the system (angular velocity and acceleration) are represented by the vector $\mathrm{U}$, and the process noise is represented by the noise vector $N$. $\mathbf{x}$ is calculated and implemented in the prediction step around the point $\left(\mu_{t-1} u_t, 0\right)$
+Where $\mathbf{g}$ is acceleration due to gravity implemented by the vector $[0,0,-9.81]^{\top}, \mathbf{n_bg}$ is the noise due to gyroscope bias and $\mathbf{n_ba}$ is noise due to accelerometer bias. The inputs to the system (angular velocity and acceleration) are represented by the vector $\mathrm{U}$, and the process noise is represented by the noise vector N. $\mathbf{x}$ is calculated and implemented in the prediction step around the point $\left(\mu_{t-1} u_t, 0\right)$
 
 The process noise has a covariance matrix $Q[15 \times 15]$ and is randomly assigned when the program is run using the MATLAB rand() and diag() functions. It remains constant between iterations so Q was implemented by persistent data type.
 
