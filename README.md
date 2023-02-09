@@ -1,5 +1,5 @@
 # Localization of a micro aerial vehicle
-This script is an application of the EKF to estimate the state of a tiny drone.
+This script is an application of the EKF to estimate the state of a tiny drone using its onboard IMU sensor data and Vicon data.
 
 The state of the MAV includes [position, velocity, orientation, gyroscope sensor bias, accelerometer sensor bias]
 
