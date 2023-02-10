@@ -3,6 +3,8 @@ This script is an application of the Extended Kalman Filter to estimate the stat
 
 The state of the MAV includes [position, velocity, orientation, gyroscope sensor bias, accelerometer sensor bias]
 
+**Note**: For localization using vision only, check [this project](https://github.com/ar6841/MAV-pose-and-velocity-estimation-using-vision)
+
 Three datasets were prepared for the model to be tested on. 
 
 Data set 1:
