@@ -136,7 +136,7 @@ $$
 $$
 
 The measurement model is linear.
-Where $v_t$ is the measurement noise. $R_t[6 \times 6]$ and is randomly assigned when the program is run using the MATLAB rand() and $\operatorname{diag}()$ functions. It remains constant between iterations so $R_t$ was implemented by persistent data type.
+Where $v_t$ is the measurement noise. $R_t[6 \times 6]$ and is randomly assigned when the program is run using the MATLAB rand() and $\mathrm{diag}()$ functions. It remains constant between iterations so $R_t$ was implemented by persistent data type.
 
 ### Part 1
 The project is split into two parts, in part one we are measuring the position $\mathbf{x}_1$ and orientation $\mathbf{x}_2$.
