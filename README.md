@@ -32,17 +32,17 @@ The state of the MAV is a vector $x$ :
 
 $$
 \mathbf{x}=\left[\begin{array}{l}
-\mathbf{x}_1 \\
-\mathbf{x}_2 \\
-\mathbf{x}_3 \\
-\mathbf{x}_4 \\
-\mathbf{x}_5
+\mathbf{x_1} \\
+\mathbf{x_2} \\
+\mathbf{x_3} \\
+\mathbf{x_4} \\
+\mathbf{x_5}
 \end{array}\right]=\left[\begin{array}{l}
 \mathbf{p} \\
 \mathbf{q} \\
 \dot{\mathbf{p}} \\
-\mathbf{b}_g \\
-\mathbf{b}_{\boldsymbol{a}}
+\mathbf{b_g} \\
+\mathbf{b_{\boldsymbol{a}}}
 \end{array}\right]=\left[\begin{array}{c}
 \text { position } \\
 \text { orientation } \\
