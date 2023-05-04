@@ -113,11 +113,11 @@ The process model assumes that $\dot{x}=f(x, u, n)$
 $$
 \dot{\mathbf{x}}=\left[\begin{array}{c}
 \mathbf{x}_3 \\
-G\left(\mathbf{x}_2\right)^{-1}\left(\boldsymbol{\omega}_m-\mathbf{x}_4-\mathbf{n}_g\right) \\
-\mathbf{g}+R\left(\mathbf{x}_2\right)\left(\mathbf{a}_m-\mathbf{x}_5-\mathbf{n}_a\right) \\
-\mathbf{n}_{b g} \\
-\mathbf{n}_{b a}
-\end{array}\right]=f(x, u, n)
+G\left(\mathbf{x}_2\right)^{-1} \left(\boldsymbol{\omega}_m-\mathbf{x}_4-\mathbf{n}_g\right) \\
+\mathbf{g} + R\left(\mathbf{x}_2\right)\left(\mathbf{a}_m-\mathbf{x}_5-\mathbf{n}_a\right) \\
+\mathrm{n}_b{}_g \\
+\mathrm{n}_b{}_a
+\end{array}\right] = f(x, u, n)
 $$
 
 Where $\mathbf{g}$ is acceleration due to gravity implemented by the vector $[0,0,-9.81]^{\top}, \mathbf{n_bg}$ is the noise due to gyroscope bias and $\mathbf{n_ba}$ is noise due to accelerometer bias. The inputs to the system (angular velocity and acceleration) are represented by the vector $\mathrm{U}$, and the process noise is represented by the noise vector N. $\mathbf{x}$ is calculated and implemented in the prediction step around the point $\left(\mu_{t-1} u_t, 0\right)$
