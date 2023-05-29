@@ -165,19 +165,28 @@ Here $g\left(x, v_t\right)$ gives us a $3 \times 1$ vector
 As the process is non-linear, the Extended Kalman Filter linearizes the system around $\dot{\mathbf{x}}\left(\mu_{t-1} u_t, 0\right)$
 And the discrete prediction step can be found to be
 
-$$
+```math
 \begin{gathered}
 \bar{\mu}_t=\mu_{t-1}+\delta t f\left(\mu_{t-1}, u_t, 0\right) \\
+\\
 \bar{\Sigma}_t=F_t \Sigma_{t-1} F_t^T+V_t Q_d V_t^T \\
+\\
 \dot{x}=f(x, u, n) \\
+\\
 n \sim N(0, Q) \\
+\\
 A_t=\left.\frac{\partial f}{\partial x}\right|_{\mu_{t-1}, u_t, 0} \\
+\\
 U_t=\left.\frac{\partial f}{\partial n}\right|_{\mu_{t-1}, u_t, 0} \\
+\\
 F_t=I_{15}+\delta t A_t \\
+\\
 V_t=U_t \\
+\\
 Q_d=Q \delta t
+\\
 \end{gathered}
-$$
+```
 
 The step size $\mathrm{dt}=\delta t$ is given as an input into the pred_step function, it's calculation is shown in the main loop description below. The calculation of the process noise has a covariance matrix $\mathrm{Q}$ was shown above in the process model.
 
